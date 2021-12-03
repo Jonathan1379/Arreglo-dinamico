@@ -1,0 +1,27 @@
+#include <iostream>
+#include "Arreglodinamico.h"
+using namespace std;
+
+int main()
+{
+    Arreglodinamico arreglo;
+
+    arreglo.insertar_final("n");
+    arreglo.insertar_final("a");
+    arreglo.insertar_final("t");
+    arreglo.insertar_final("h");
+    arreglo.insertar_final("a");
+    arreglo.insertar_final("n ");
+    arreglo.insertar_final("R");
+    arreglo.insertar_final("o");
+    arreglo.insertar_inicio("o");
+    arreglo.insertar_inicio("J");
+
+    for(size_t i=0;i<arreglo.size();i++)
+    {
+        cout<<arreglo[i]<<"";
+
+    }
+
+    return 0;
+}
